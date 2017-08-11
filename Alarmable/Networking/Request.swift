@@ -15,13 +15,7 @@ class Request {
         case alarm = "alarms/"
     }
     
-    var baseUrl: String {
-        #if STAGING
-            return "http://localhost:3000/"
-        #else
-            return "http://azing.io:3000/"
-        #endif
-    }
+    var baseUrl = "http://azing.io:3000/"
         
     var urlParameter = ""
     var method: HTTPMethod

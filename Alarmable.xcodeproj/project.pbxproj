@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		30DE0B15A080CCF855AB4160 /* Pods_Alarmable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85E5C250F63D2F35BECCBBE3 /* Pods_Alarmable.framework */; };
 		3F343AAA42765F2E88CE923B /* Pods_Alarmable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85E5C250F63D2F35BECCBBE3 /* Pods_Alarmable.framework */; };
 		810A4F021EF322F7009E8318 /* FriendCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810A4F011EF322F7009E8318 /* FriendCell.swift */; };
 		810A4F041EF5FF03009E8318 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810A4F031EF5FF03009E8318 /* UIColor+Extensions.swift */; };
@@ -16,33 +15,6 @@
 		8123E37C1F15525E0028FD80 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8123E37B1F15525E0028FD80 /* Settings.bundle */; };
 		8123E37F1F158E0E0028FD80 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8123E37E1F158E0E0028FD80 /* OnboardingViewController.swift */; };
 		81492BB11F3CD5C500E8C3CE /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81492BB01F3CD5C500E8C3CE /* Request.swift */; };
-		81492BB61F3CE52B00E8C3CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81CBA89E1EE35FF10011E67C /* AppDelegate.swift */; };
-		81492BB71F3CE52B00E8C3CE /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818D430F1F17CD27005F4F01 /* UIView+Extensions.swift */; };
-		81492BB81F3CE52B00E8C3CE /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81AE05C61F3584B900D30D3E /* Date+Extensions.swift */; };
-		81492BB91F3CE52B00E8C3CE /* TPKeyboardAvoidingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 816DBDF31EE7464500E1F7D5 /* TPKeyboardAvoidingScrollView.m */; };
-		81492BBA1F3CE52B00E8C3CE /* UINavigationController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B2C5131EE5DADD007785E2 /* UINavigationController+Extensions.swift */; };
-		81492BBB1F3CE52B00E8C3CE /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810A4F091EF969FB009E8318 /* App.swift */; };
-		81492BBC1F3CE52B00E8C3CE /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81CA8D2A1EEFB35C00872140 /* Friend.swift */; };
-		81492BBD1F3CE52B00E8C3CE /* TPKeyboardAvoidingTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 816DBDF51EE7464500E1F7D5 /* TPKeyboardAvoidingTableView.m */; };
-		81492BBE1F3CE52B00E8C3CE /* PermissionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818D430D1F17CCCC005F4F01 /* PermissionsViewController.swift */; };
-		81492BBF1F3CE52B00E8C3CE /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8123E37E1F158E0E0028FD80 /* OnboardingViewController.swift */; };
-		81492BC01F3CE52B00E8C3CE /* TimeInterval+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818D43121F186EB5005F4F01 /* TimeInterval+Extensions.swift */; };
-		81492BC11F3CE52B00E8C3CE /* AlarmTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81CBA8A41EE360110011E67C /* AlarmTableViewController.swift */; };
-		81492BC21F3CE52B00E8C3CE /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B2C5111EE5D194007785E2 /* UIViewController+Extensions.swift */; };
-		81492BC31F3CE52B00E8C3CE /* AlarmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8123E3791F1550370028FD80 /* AlarmManager.swift */; };
-		81492BC41F3CE52B00E8C3CE /* AlarmDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81CBA8A01EE360010011E67C /* AlarmDetailViewController.swift */; };
-		81492BC51F3CE52B00E8C3CE /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81492BB01F3CD5C500E8C3CE /* Request.swift */; };
-		81492BC61F3CE52B00E8C3CE /* Alarm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81CBA8A21EE3600B0011E67C /* Alarm.swift */; };
-		81492BC71F3CE52B00E8C3CE /* TPKeyboardAvoidingCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 816DBDF11EE7464500E1F7D5 /* TPKeyboardAvoidingCollectionView.m */; };
-		81492BC81F3CE52B00E8C3CE /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 816DBDF71EE7464500E1F7D5 /* UIScrollView+TPKeyboardAvoidingAdditions.m */; };
-		81492BC91F3CE52B00E8C3CE /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810A4F031EF5FF03009E8318 /* UIColor+Extensions.swift */; };
-		81492BCA1F3CE52B00E8C3CE /* FriendCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810A4F011EF322F7009E8318 /* FriendCell.swift */; };
-		81492BCB1F3CE52B00E8C3CE /* AlarmCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81AF0CF51EE860220048BB11 /* AlarmCell.swift */; };
-		81492BCF1F3CE52B00E8C3CE /* Alarm.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 81AE05F91F399FB600D30D3E /* Alarm.mp3 */; };
-		81492BD01F3CE52B00E8C3CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81DCC8CE1EE07FDE00EDEA62 /* LaunchScreen.storyboard */; };
-		81492BD11F3CE52B00E8C3CE /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8123E37B1F15525E0028FD80 /* Settings.bundle */; };
-		81492BD21F3CE52B00E8C3CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81DCC8CC1EE07FDE00EDEA62 /* Assets.xcassets */; };
-		81492BD31F3CE52B00E8C3CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81DCC8C91EE07FDE00EDEA62 /* Main.storyboard */; };
 		816DBDF81EE7464500E1F7D5 /* TPKeyboardAvoidingCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 816DBDF11EE7464500E1F7D5 /* TPKeyboardAvoidingCollectionView.m */; };
 		816DBDF91EE7464500E1F7D5 /* TPKeyboardAvoidingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 816DBDF31EE7464500E1F7D5 /* TPKeyboardAvoidingScrollView.m */; };
 		816DBDFA1EE7464500E1F7D5 /* TPKeyboardAvoidingTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 816DBDF51EE7464500E1F7D5 /* TPKeyboardAvoidingTableView.m */; };
@@ -74,7 +46,6 @@
 		8123E37B1F15525E0028FD80 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		8123E37E1F158E0E0028FD80 /* OnboardingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OnboardingViewController.swift; path = Onboarding/OnboardingViewController.swift; sourceTree = "<group>"; };
 		81492BB01F3CD5C500E8C3CE /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Networking/Request.swift; sourceTree = "<group>"; };
-		81492BD91F3CE52B00E8C3CE /* Alarmable Staging.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Alarmable Staging.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81492BDA1F3CE52C00E8C3CE /* Staging-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Staging-Info.plist"; path = "/Users/Haven/Desktop/Personal/iOS Projects/Alarmable/Staging-Info.plist"; sourceTree = "<absolute>"; };
 		816DBDEF1EE7464500E1F7D5 /* Alarmable-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Alarmable-Bridging-Header.h"; sourceTree = "<group>"; };
 		816DBDF01EE7464500E1F7D5 /* TPKeyboardAvoidingCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TPKeyboardAvoidingCollectionView.h; path = Extensions/TPKeyboardAvoiding/TPKeyboardAvoidingCollectionView.h; sourceTree = "<group>"; };
@@ -109,19 +80,11 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		81492BCC1F3CE52B00E8C3CE /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		81DCC8BD1EE07FDE00EDEA62 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				3F343AAA42765F2E88CE923B /* Pods_Alarmable.framework in Frameworks */,
-				30DE0B15A080CCF855AB4160 /* Pods_Alarmable.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,7 +209,6 @@
 			isa = PBXGroup;
 			children = (
 				81DCC8C01EE07FDE00EDEA62 /* Alarmable.app */,
-				81492BD91F3CE52B00E8C3CE /* Alarmable Staging.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -281,23 +243,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		81492BB31F3CE52B00E8C3CE /* Alarmable Staging */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 81492BD61F3CE52B00E8C3CE /* Build configuration list for PBXNativeTarget "Alarmable Staging" */;
-			buildPhases = (
-				81492BB51F3CE52B00E8C3CE /* Sources */,
-				81492BCC1F3CE52B00E8C3CE /* Frameworks */,
-				81492BCE1F3CE52B00E8C3CE /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Alarmable Staging";
-			productName = Alarmable;
-			productReference = 81492BD91F3CE52B00E8C3CE /* Alarmable Staging.app */;
-			productType = "com.apple.product-type.application";
-		};
 		81DCC8BF1EE07FDE00EDEA62 /* Alarmable */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 81DCC8D41EE07FDE00EDEA62 /* Build configuration list for PBXNativeTarget "Alarmable" */;
@@ -328,9 +273,6 @@
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = Azing;
 				TargetAttributes = {
-					81492BB31F3CE52B00E8C3CE = {
-						DevelopmentTeam = P6WDVDEGP6;
-					};
 					81DCC8BF1EE07FDE00EDEA62 = {
 						CreatedOnToolsVersion = 8.3.1;
 						DevelopmentTeam = P6WDVDEGP6;
@@ -361,24 +303,11 @@
 			projectRoot = "";
 			targets = (
 				81DCC8BF1EE07FDE00EDEA62 /* Alarmable */,
-				81492BB31F3CE52B00E8C3CE /* Alarmable Staging */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		81492BCE1F3CE52B00E8C3CE /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				81492BCF1F3CE52B00E8C3CE /* Alarm.mp3 in Resources */,
-				81492BD01F3CE52B00E8C3CE /* LaunchScreen.storyboard in Resources */,
-				81492BD11F3CE52B00E8C3CE /* Settings.bundle in Resources */,
-				81492BD21F3CE52B00E8C3CE /* Assets.xcassets in Resources */,
-				81492BD31F3CE52B00E8C3CE /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		81DCC8BE1EE07FDE00EDEA62 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -442,35 +371,6 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		81492BB51F3CE52B00E8C3CE /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				81492BB61F3CE52B00E8C3CE /* AppDelegate.swift in Sources */,
-				81492BB71F3CE52B00E8C3CE /* UIView+Extensions.swift in Sources */,
-				81492BB81F3CE52B00E8C3CE /* Date+Extensions.swift in Sources */,
-				81492BB91F3CE52B00E8C3CE /* TPKeyboardAvoidingScrollView.m in Sources */,
-				81492BBA1F3CE52B00E8C3CE /* UINavigationController+Extensions.swift in Sources */,
-				81492BBB1F3CE52B00E8C3CE /* App.swift in Sources */,
-				81492BBC1F3CE52B00E8C3CE /* Friend.swift in Sources */,
-				81492BBD1F3CE52B00E8C3CE /* TPKeyboardAvoidingTableView.m in Sources */,
-				81492BBE1F3CE52B00E8C3CE /* PermissionsViewController.swift in Sources */,
-				81492BBF1F3CE52B00E8C3CE /* OnboardingViewController.swift in Sources */,
-				81492BC01F3CE52B00E8C3CE /* TimeInterval+Extensions.swift in Sources */,
-				81492BC11F3CE52B00E8C3CE /* AlarmTableViewController.swift in Sources */,
-				81492BC21F3CE52B00E8C3CE /* UIViewController+Extensions.swift in Sources */,
-				81492BC31F3CE52B00E8C3CE /* AlarmManager.swift in Sources */,
-				81492BC41F3CE52B00E8C3CE /* AlarmDetailViewController.swift in Sources */,
-				81492BC51F3CE52B00E8C3CE /* Request.swift in Sources */,
-				81492BC61F3CE52B00E8C3CE /* Alarm.swift in Sources */,
-				81492BC71F3CE52B00E8C3CE /* TPKeyboardAvoidingCollectionView.m in Sources */,
-				81492BC81F3CE52B00E8C3CE /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */,
-				81492BC91F3CE52B00E8C3CE /* UIColor+Extensions.swift in Sources */,
-				81492BCA1F3CE52B00E8C3CE /* FriendCell.swift in Sources */,
-				81492BCB1F3CE52B00E8C3CE /* AlarmCell.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		81DCC8BC1EE07FDE00EDEA62 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -522,43 +422,6 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		81492BD71F3CE52B00E8C3CE /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_ENTITLEMENTS = Alarmable/Alarmable.entitlements;
-				DEVELOPMENT_TEAM = P6WDVDEGP6;
-				INFOPLIST_FILE = "$(SRCROOT)/Staging-Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"STAGING\"";
-				PRODUCT_BUNDLE_IDENTIFIER = io.azing.Alarmable;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "Alarmable/Alarmable-Bridging-Header.h";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = 1;
-			};
-			name = Debug;
-		};
-		81492BD81F3CE52B00E8C3CE /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_ENTITLEMENTS = Alarmable/Alarmable.entitlements;
-				DEVELOPMENT_TEAM = P6WDVDEGP6;
-				INFOPLIST_FILE = "$(SRCROOT)/Staging-Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"STAGING\"";
-				PRODUCT_BUNDLE_IDENTIFIER = io.azing.Alarmable;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "Alarmable/Alarmable-Bridging-Header.h";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = 1;
-			};
-			name = Release;
-		};
 		81DCC8D21EE07FDE00EDEA62 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -694,15 +557,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		81492BD61F3CE52B00E8C3CE /* Build configuration list for PBXNativeTarget "Alarmable Staging" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				81492BD71F3CE52B00E8C3CE /* Debug */,
-				81492BD81F3CE52B00E8C3CE /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		81DCC8BB1EE07FDE00EDEA62 /* Build configuration list for PBXProject "Alarmable" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
