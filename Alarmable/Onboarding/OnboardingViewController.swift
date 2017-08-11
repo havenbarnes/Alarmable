@@ -31,9 +31,6 @@ class OnboardingViewController: UIViewController, UITextFieldDelegate {
         
             self.startPresentation()
         })
-        
-        
-        
     }
     
     func setupPresentation() {

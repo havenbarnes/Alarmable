@@ -46,7 +46,6 @@
 		8123E37B1F15525E0028FD80 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		8123E37E1F158E0E0028FD80 /* OnboardingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OnboardingViewController.swift; path = Onboarding/OnboardingViewController.swift; sourceTree = "<group>"; };
 		81492BB01F3CD5C500E8C3CE /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Networking/Request.swift; sourceTree = "<group>"; };
-		81492BDA1F3CE52C00E8C3CE /* Staging-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Staging-Info.plist"; path = "/Users/Haven/Desktop/Personal/iOS Projects/Alarmable/Staging-Info.plist"; sourceTree = "<absolute>"; };
 		816DBDEF1EE7464500E1F7D5 /* Alarmable-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Alarmable-Bridging-Header.h"; sourceTree = "<group>"; };
 		816DBDF01EE7464500E1F7D5 /* TPKeyboardAvoidingCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TPKeyboardAvoidingCollectionView.h; path = Extensions/TPKeyboardAvoiding/TPKeyboardAvoidingCollectionView.h; sourceTree = "<group>"; };
 		816DBDF11EE7464500E1F7D5 /* TPKeyboardAvoidingCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TPKeyboardAvoidingCollectionView.m; path = Extensions/TPKeyboardAvoiding/TPKeyboardAvoidingCollectionView.m; sourceTree = "<group>"; };
@@ -170,7 +169,6 @@
 				81CBA89E1EE35FF10011E67C /* AppDelegate.swift */,
 				816DBDEF1EE7464500E1F7D5 /* Alarmable-Bridging-Header.h */,
 				81DCC8D11EE07FDE00EDEA62 /* Info.plist */,
-				81492BDA1F3CE52C00E8C3CE /* Staging-Info.plist */,
 				818D43111F17CED3005F4F01 /* Alarmable.entitlements */,
 			);
 			name = Core;

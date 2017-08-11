@@ -66,8 +66,6 @@ class PermissionsViewController: UIViewController {
             }
             self.navigationController?.dismiss(animated: true, completion: nil)
         }
-        
-        
     }
     
     func showSettingsLink() {

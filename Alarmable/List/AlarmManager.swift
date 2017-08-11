@@ -13,7 +13,6 @@ class AlarmManager {
     
     static let shared = AlarmManager()
     
-    
     var category: UNNotificationCategory {
         let deleteAction = UNNotificationAction(identifier: "AlarmOff",
                                                 title: "Stop", options: [.destructive])
