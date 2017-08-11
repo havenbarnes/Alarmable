@@ -1,0 +1,26 @@
+PODS:
+  - Alamofire (4.4.0)
+  - DZNEmptyDataSet (1.8.1)
+  - Realm (2.7.0):
+    - Realm/Headers (= 2.7.0)
+  - Realm/Headers (2.7.0)
+  - RealmSwift (2.7.0):
+    - Realm (= 2.7.0)
+  - YapAnimator (1.2.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - DZNEmptyDataSet
+  - RealmSwift
+  - YapAnimator
+
+SPEC CHECKSUMS:
+  Alamofire: dc44b1600b800eb63da6a19039a0083d62a6a62d
+  DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
+  Realm: 07e5d3a9e0e41d65fd5f9f05150ed6295d0f093b
+  RealmSwift: 6d06425d3900c86473c4f323bf6949b43fca22bc
+  YapAnimator: eecfd13c5a65087c2af4ddb11a09f7693edec966
+
+PODFILE CHECKSUM: a0fe6b49ca3f0ece6d4d0a2a0497f8e91969bd69
+
+COCOAPODS: 1.2.0
