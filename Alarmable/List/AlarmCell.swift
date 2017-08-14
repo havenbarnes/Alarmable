@@ -38,6 +38,7 @@ class AlarmCell: UITableViewCell {
     
     var alarm: Alarm! {
         didSet {
+            guard alarm != nil else { return }
             alarmLabel.text = alarm.label
             timeLabel.text = timeFormatter.string(from: alarm.fireDate as Date)
             amPmLabel.text = amPmFormatter.string(from: alarm.fireDate as Date)
@@ -87,12 +88,20 @@ class AlarmCell: UITableViewCell {
     
     /// Applies background gradient specific to the time of alarm
     func setupGradient() {
-        if gradient == nil {
-            gradient = CAGradientLayer()
-            gradient.frame = contentView.bounds
-            gradient.frame.size.width += 100
-            roundedBackgroundView.layer.insertSublayer(gradient, at: 0)
+        
+        // Check to make sure we're not unnecessarily 
+        // setting up gradient for deleted alarm
+        // TODO: Find more elegant solution for this
+        guard alarm != nil else { return }
+
+        if gradient != nil {
+            gradient.removeFromSuperlayer()
+            gradient = nil
         }
+        
+        gradient = CAGradientLayer()
+        gradient.frame = contentView.bounds
+        roundedBackgroundView.layer.insertSublayer(gradient, at: 0)
         
         let hour = Calendar.current.component(.hour, from: alarm.fireDate as Date)
         let minute = Calendar.current.component(.minute, from: alarm.fireDate as Date)

@@ -89,7 +89,7 @@
                                             <subviews>
                                                 <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NY3-hh-8FU" userLabel="Rounded Background">
                                                     <rect key="frame" x="8" y="10" width="359" height="150"/>
-                                                    <color key="backgroundColor" red="0.82806551395939088" green="0.38673390491493798" blue="0.017587749019517322" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="backgroundColor" red="0.86026729060913709" green="0.86026729060913709" blue="0.86026729060913709" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <userDefinedRuntimeAttributes>
                                                         <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                                             <integer key="value" value="8"/>

@@ -33,11 +33,6 @@ extension NSDate {
         let calendar = Calendar.current
         var fireDateComponents = calendar.dateComponents([.day, .hour, .minute, .second], from: date)
         let currentDateComponents = calendar.dateComponents([.year, .month, .day, .hour, .minute, .second], from: currentDate)
-        
-        print("Fire Date:    \(fireDateComponents.hour!):\(fireDateComponents.minute!)")
-        print("Current Date: \(currentDateComponents.hour!):\(currentDateComponents.minute!)")
-
-        print("Fire Date Day Before: \(fireDateComponents.day!)")
 
         fireDateComponents.setValue(currentDateComponents.year, for: .year)
         fireDateComponents.setValue(currentDateComponents.month, for: .month)
@@ -51,8 +46,6 @@ extension NSDate {
             && fireDateComponents.second! < currentDateComponents.second! {
             fireDateComponents.setValue(currentDateComponents.day! + 1, for: .day)
         }
-        
-        print("Fire Date Day After: \(fireDateComponents.day!)")
 
         return calendar.date(from: fireDateComponents)!
     }
