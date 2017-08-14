@@ -24,14 +24,10 @@ class AlarmManager {
     
     
     /// Schedules a Local Notification for Alarm
-    func schedule(_ alarm: Alarm, test: Bool = false) {
+    func schedule(_ alarm: Alarm) {
         
         // After some time, if alarm not deactivated, send SMS
         var components: Set<Calendar.Component> = [.hour, .minute]
-        
-        if test {
-            components = components.union([.second])
-        }
         
         if !alarm.repeats {
             components = components.union([.year, .month, .day])
@@ -44,9 +40,7 @@ class AlarmManager {
         }
         
         let fireDateComponents = Calendar.current.dateComponents(components, from: fireDate as Date)
-        
-        debugPrint(fireDateComponents)
-        
+                
         let trigger = UNCalendarNotificationTrigger(dateMatching: fireDateComponents, repeats: alarm.repeats)
 
         let identifier = alarm.id

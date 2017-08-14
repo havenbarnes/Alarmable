@@ -49,8 +49,8 @@ class AlarmCell: UITableViewCell {
         }
     }
     
+    /// Sets up the shared with label syntactically
     func setupSharedWithLabel() {
-                
         switch alarm.friends.count {
         case 0:
             sharedWith.text = nil
@@ -85,6 +85,7 @@ class AlarmCell: UITableViewCell {
         }
     }
     
+    /// Applies background gradient specific to the time of alarm
     func setupGradient() {
         if gradient == nil {
             gradient = CAGradientLayer()
@@ -116,6 +117,7 @@ class AlarmCell: UITableViewCell {
             colorTwo = night
         }
         
+        // Interpolate to create a gradient specific for this time of day
         let resultRed = colorOne.red + CGFloat(percent) * (colorTwo.red - colorOne.red);
         let resultGreen = colorOne.green + CGFloat(percent) * (colorTwo.green - colorOne.green);
         let resultBlue = colorOne.blue + CGFloat(percent) * (colorTwo.blue - colorOne.blue);

@@ -9,6 +9,8 @@
 import Foundation
 import Alamofire
 
+/// A generic url request that adds a layer of abstraction on
+/// Alamofire. Sufficient for the use of Alarmable's API
 class Request {
     
     enum Endpoint: String {
@@ -55,7 +57,6 @@ class Request {
                                   encoding: String.Encoding.utf8)
             print(response ?? "No response from server.")
             completion?(true, nil)
-            
         })
     }
 }

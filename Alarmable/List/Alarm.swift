@@ -30,18 +30,19 @@ class Alarm: Object {
         return list
     }
     
-    func enable(test: Bool = false) {
+    func enable() {
         
         let realm = try! Realm()
         try! realm.write {
             // Randomizing ID on re-enable means no more
-            // 3 texts at a time (SEE npm's node-schedule)
+            // 3 texts at a time, a bug that occurs with
+            // npm module 'node-schedule'
             self.id = UUID().uuidString
             self.isEnabled = true
             self.fireDate = self.fireDate.modernized() as NSDate
         }
         
-        AlarmManager.shared.schedule(self, test: test)
+        AlarmManager.shared.schedule(self)
         
         // If this alarm has no friends involved, the API 
         // doesn't need to know about it
@@ -56,8 +57,6 @@ class Alarm: Object {
                 "friends_numbers": numbersList()
             ]
         ]
-        
-        print(alarm)
         
         let request = Request(endpoint: .alarm, method: .post, body: alarm)
         request.send(completion: {

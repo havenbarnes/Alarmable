@@ -38,7 +38,6 @@ class AlarmDetailViewController: UITableViewController, UITextFieldDelegate, CNC
         configureView()
     }
     
-    
     override func scrollViewDidScroll(_ scrollView: UIScrollView) {
         let y = -self.tableView.contentOffset.y
         
@@ -180,12 +179,10 @@ class AlarmDetailViewController: UITableViewController, UITextFieldDelegate, CNC
     }
     
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        
         if indexPath.row > 1 && indexPath.row < 2 + alarm.friends.count {
             return true
         }
         return false
-        
     }
     
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {

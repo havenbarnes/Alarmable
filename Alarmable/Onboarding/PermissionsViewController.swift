@@ -31,11 +31,9 @@ class PermissionsViewController: UIViewController {
             
             self.startPresentation()
         })
-        
     }
     
     func setupPresentation() {
-        
         if let name = App.shared.userName {
             nameLabel.text = "\(name),"
         }

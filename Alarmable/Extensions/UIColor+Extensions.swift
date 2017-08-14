@@ -81,9 +81,9 @@ extension UIColor {
      */
     func gradientColors() -> [CGColor] {
         
-        let color1 = self.adjustHue(by: 20)
+        let color1 = self.adjustHue(by: -20)
         let color2 = self
-        let color3 = self.adjustHue(by: -20)
+        let color3 = self.adjustHue(by: 20)
         return [color1.cgColor, color2.cgColor, color3.cgColor]
     }
 
