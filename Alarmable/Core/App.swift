@@ -10,6 +10,7 @@ import Foundation
 import UserNotifications
 
 class App {
+    
     static let shared = App()
         
     var userName: String? {
