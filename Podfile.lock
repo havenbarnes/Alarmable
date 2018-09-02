@@ -1,11 +1,11 @@
 PODS:
-  - Alamofire (4.4.0)
+  - Alamofire (4.7.3)
   - DZNEmptyDataSet (1.8.1)
-  - Realm (2.7.0):
-    - Realm/Headers (= 2.7.0)
-  - Realm/Headers (2.7.0)
-  - RealmSwift (2.7.0):
-    - Realm (= 2.7.0)
+  - Realm (3.7.6):
+    - Realm/Headers (= 3.7.6)
+  - Realm/Headers (3.7.6)
+  - RealmSwift (3.7.6):
+    - Realm (= 3.7.6)
   - YapAnimator (1.2.0)
 
 DEPENDENCIES:
@@ -15,12 +15,12 @@ DEPENDENCIES:
   - YapAnimator
 
 SPEC CHECKSUMS:
-  Alamofire: dc44b1600b800eb63da6a19039a0083d62a6a62d
+  Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
   DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
-  Realm: 07e5d3a9e0e41d65fd5f9f05150ed6295d0f093b
-  RealmSwift: 6d06425d3900c86473c4f323bf6949b43fca22bc
+  Realm: 9eaecad54712d6246d08ba34c10f354e4715d7d3
+  RealmSwift: 1fe08b4ebaeeaacf17f9ba0343f7b25c9fc31fa6
   YapAnimator: eecfd13c5a65087c2af4ddb11a09f7693edec966
 
 PODFILE CHECKSUM: a0fe6b49ca3f0ece6d4d0a2a0497f8e91969bd69
 
-COCOAPODS: 1.2.0
+COCOAPODS: 1.4.0

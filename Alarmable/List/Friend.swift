@@ -10,6 +10,6 @@ import Foundation
 import RealmSwift
 
 class Friend: Object {
-    dynamic var name = ""
-    dynamic var phoneNumber = ""
+    @objc dynamic var name = ""
+    @objc dynamic var phoneNumber = ""
 }

@@ -54,12 +54,10 @@ class AlarmManager {
         let request = UNNotificationRequest(identifier: identifier,
                                             content: content, trigger: trigger)
         UNUserNotificationCenter.current().add(request, withCompletionHandler: { error in
-            
             guard error == nil else {
                 print(error!.localizedDescription)
                 return
             }
-            
         })
     }
     

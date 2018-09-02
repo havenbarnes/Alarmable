@@ -12,11 +12,11 @@ import UserNotifications
 import Alamofire
 
 class Alarm: Object {
-    dynamic var id = UUID().uuidString
-    dynamic var label: String? = nil
-    dynamic var fireDate = NSDate()
-    dynamic var isEnabled = false
-    dynamic var repeats = false
+    @objc dynamic var id = UUID().uuidString
+    @objc dynamic var label: String? = nil
+    @objc dynamic var fireDate = NSDate()
+    @objc dynamic var isEnabled = false
+    @objc dynamic var repeats = false
     
     let friends = List<Friend>()
     
@@ -31,7 +31,6 @@ class Alarm: Object {
     }
     
     func enable() {
-        
         let realm = try! Realm()
         try! realm.write {
             // Randomizing ID on re-enable means no more
@@ -54,7 +53,7 @@ class Alarm: Object {
                 "name": App.shared.userName ?? "Your friend",
                 "date": fireDate.string,
                 "repeats": repeats,
-                "friends_numbers": numbersList()
+                "friend_numbers": numbersList()
             ]
         ]
         

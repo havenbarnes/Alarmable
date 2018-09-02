@@ -189,7 +189,7 @@ class AlarmDetailViewController: UITableViewController, UITextFieldDelegate, CNC
         if editingStyle == .delete {
             
             guard let existingAlarm = detailItem else {
-                alarm.friends.remove(objectAtIndex: indexPath.row - 2)
+                alarm.friends.remove(at: indexPath.row - 2)
                 tableView.deleteRows(at: [indexPath], with: .automatic)
                 return
             }
@@ -217,7 +217,6 @@ class AlarmDetailViewController: UITableViewController, UITextFieldDelegate, CNC
     func contactPicker(_ picker: CNContactPickerViewController, didSelect contact: CNContact) {
         picker.dismiss(animated: true, completion: nil)
         
-        
         var selectedPhoneNumber = ""
         
         let addFriend = {
@@ -240,7 +239,6 @@ class AlarmDetailViewController: UITableViewController, UITextFieldDelegate, CNC
             self.tableView.scrollToRow(at: newIndexPath, at: .middle, animated: false)
         }
 
-        
         // Allow user to select phone number if selected contact has multiple
         if contact.phoneNumbers.count > 1 {
             let alert = UIAlertController(title: "Select A Phone Number For \(contact.givenName)", message: nil, preferredStyle: .actionSheet)

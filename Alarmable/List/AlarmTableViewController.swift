@@ -20,7 +20,7 @@ class AlarmTableViewController: UIViewController, UITableViewDelegate, UITableVi
     
     var notificationToken: NotificationToken?
     deinit {
-        notificationToken?.stop()
+        notificationToken?.invalidate()
     }
     
     let realm = try! Realm()
@@ -30,12 +30,12 @@ class AlarmTableViewController: UIViewController, UITableViewDelegate, UITableVi
         
         setupUI()
         
-        alarms = realm.objects(Alarm.self).sorted(byKeyPath: "fireDate")
+        alarms = realm.objects(Alarm.self)
         
         tableView.emptyDataSetSource = self
         tableView.emptyDataSetDelegate = self
         
-        notificationToken = alarms.addNotificationBlock { [weak self] (changes: RealmCollectionChange) in
+        notificationToken = alarms.observe { [weak self] (changes: RealmCollectionChange) in
             guard self != nil else { return }
             self!.realmDidUpdate(changes)
         }
@@ -73,8 +73,8 @@ class AlarmTableViewController: UIViewController, UITableViewDelegate, UITableVi
     
     func title(forEmptyDataSet scrollView: UIScrollView!) -> NSAttributedString! {
         let text = "No Alarms"
-        let attributes = [NSFontAttributeName: UIFont(name: ".SFUIDisplay-Semibold", size: 26)!,
-                          NSForegroundColorAttributeName: UIColor("DBDBDB")]
+        let attributes = [NSAttributedStringKey.font: UIFont(name: ".SFUIDisplay-Semibold", size: 26)!,
+                          NSAttributedStringKey.foregroundColor: UIColor("DBDBDB")]
         
         return NSAttributedString(string: text, attributes: attributes)
     }

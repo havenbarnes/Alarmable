@@ -17,7 +17,7 @@ class Request {
         case alarm = "alarms/"
     }
     
-    var baseUrl = "http://azing.io:3000/"
+    var baseUrl = "https://alarmable-server.herokuapp.com/"
         
     var urlParameter = ""
     var method: HTTPMethod
