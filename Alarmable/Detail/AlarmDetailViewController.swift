@@ -17,8 +17,6 @@ class AlarmDetailViewController: UITableViewController, UITextFieldDelegate, CNC
     @IBOutlet weak var timePicker: UIDatePicker!
     @IBOutlet weak var alarmLabel: UITextField!
     @IBOutlet weak var repeatsSwitch: UISwitch!
-
-    var headerWhiteView: UIView?
     
     var detailItem: Alarm?
     private var alarm = Alarm()
@@ -38,27 +36,8 @@ class AlarmDetailViewController: UITableViewController, UITextFieldDelegate, CNC
         configureView()
     }
     
-    override func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        let y = -self.tableView.contentOffset.y
-        
-        if headerWhiteView == nil {
-            headerWhiteView = UIView()
-            headerWhiteView?.backgroundColor = UIColor.white
-            let window = UIApplication.shared.keyWindow
-            window?.addSubview(headerWhiteView!)
-        }
-        
-        if y > 0 {
-            headerWhiteView?.frame = CGRect(x: 0, y: 64, width: tableView.frame.width, height: y)
-        }
-    }
-    
     override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-        headerWhiteView?.alpha = 0
-        headerWhiteView?.removeFromSuperview()
-        headerWhiteView = nil
-        
+        super.viewWillDisappear(animated)        
         if detailItem != nil {
             updateAlarm()
         }
